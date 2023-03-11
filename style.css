@@ -1,3 +1,76 @@
-h1 {
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("./background.jpeg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    width: 100vw;
+}
+
+.header-div {
+    display: flex;
+}
+
+.header-div h1 {
+    transition: all .15s ease-in-out;
+    font-size: 150px;
+    margin: 0;
+    user-select: none;
+}
+
+.header-div h1:hover {
+   transform: scale(1.1);
+}
+
+#number {
+    font-size: 175px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+.buttons p {
+    font-size: 50px;
+    margin: 0 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 3px solid black;
+    padding: 5px 15px;
+    transition: all .2s ease-in-out;
+}
+
+.buttons p:hover {
+    transform: scale(1.1);
+}
+
+#decrease:hover {
+    background-color: rgb(177, 174, 174);
+    border-color: blue;
     color: blue;
+}
+
+#reset:hover {
+    background-color: rgb(177, 174, 174);
+    border-color: red;
+    color: red;
+}
+
+#increase:hover {
+    background-color: rgb(177, 174, 174);
+    border-color: green;
+    color: green;
 }
