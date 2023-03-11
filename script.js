@@ -1,5 +1,8 @@
 // Get Current Number on Load
 let number = localStorage.getItem("number");
+if (!number) {
+    number = 0
+}
 
 // Single Function to update number
 const updateNumber = ({ target }) => {
